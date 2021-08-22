@@ -86,17 +86,17 @@
             <i class="fad fa-ellipsis-h"></i>&nbsp;More
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" onclick="location.href='/partners'"><i class="fad fa-handshake"></i>&nbsp;Partners</a>
-            <a class="dropdown-item" onclick="location.href='/team'"><i class="fad fa-users mr-1"></i>&nbsp;Team</a>
-            <a class="dropdown-item" onclick="location.href='/rewards'"><i class="fad fa-coin mr-1"></i>&nbsp;Rewards</a>
-            <a class="dropdown-item" onclick="location.href='/promotion'"><i class="fad fa-stars"></i> Promotions</a>
-            <a class="dropdown-item" onclick="location.href='/credits'"><i class="fad fa-coin mr-1"></i>&nbsp;Credits</a>
-            <a class="dropdown-item" onclick="location.href='certification/apply'"><i class="fad fa-badge-check"></i>&nbsp;Certification</a>
-            <a class="dropdown-item" onclick="location.href='/status'"><i class="fad fa-chart-bar mr-1"></i>&nbsp;Status</a>
-            <a class="dropdown-item" onclick="location.href='/codes/categories'"><i class="fad fa-code"></i>&nbsp;Code Share</a>
-            <a class="dropdown-item"  onclick="location.href='/uptime/links'"><i class="fad fa-sync-alt"></i>&nbsp;Uptime</a>
-            <a class="dropdown-item"  onclick="location.href='/bugreport'"><i class="fal fa-bug"></i>&nbsp;Bug Report</a>
-            <a class="dropdown-item" onclick="location.href='/premium'"><i class="fad fa-stars"></i> Premium</a>
+            <a class="dropdown-item" href="/partners"><i class="fad fa-handshake"></i>&nbsp;Partners</a>
+            <a class="dropdown-item" href="/team"><i class="fad fa-users mr-1"></i>&nbsp;Team</a>
+            <a class="dropdown-item" href="/rewards"><i class="fad fa-coin mr-1"></i>&nbsp;Rewards</a>
+            <a class="dropdown-item" href="/promotion"><i class="fad fa-stars"></i> Promotions</a>
+            <a class="dropdown-item" href="/credits"><i class="fad fa-coin mr-1"></i>&nbsp;Credits</a>
+            <a class="dropdown-item" href="/certification/apply"><i class="fad fa-badge-check"></i>&nbsp;Certification</a>
+            <a class="dropdown-item" href="/status"><i class="fad fa-chart-bar mr-1"></i>&nbsp;Status</a>
+            <a class="dropdown-item" href="/codes/categories"><i class="fad fa-code"></i>&nbsp;Code Share</a>
+            <a class="dropdown-item" href="/uptime/links"><i class="fad fa-sync-alt"></i>&nbsp;Uptime</a>
+            <a class="dropdown-item" href="/bugreport"><i class="fal fa-bug"></i>&nbsp;Bug Report</a>
+            <a class="dropdown-item" href="/premium"><i class="fad fa-stars"></i> Premium</a>
             <% if(user) { %>
                 <% 
                 let guild = bot.guilds.cache.get(config.server.id).members.cache.get(user.id);
