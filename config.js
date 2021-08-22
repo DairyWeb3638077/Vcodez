@@ -147,6 +147,7 @@
       administrator: "",
       moderator: "",
       premiumuser: "",
+      coder: "878860832589643806",
       profile: {
         sitecreator:"",
         booster: "",
