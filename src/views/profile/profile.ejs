@@ -38,6 +38,9 @@
             <% if (sitecreatorRole) { %>
             <span data-tooltip="<%=sitecreatorRole.name%>" data-tooltip-location="top"> <i class="fas fa-laptop-code has-text-success" style="color: <%=sitecreatorRole.hexColor%>;bottom: -5px; font-size: 26px;"></i></span>
             <% } %>
+	    <% if (coderRole) { %>
+            <span data-tooltip="<%=coderRole.name%>" data-tooltip-location="top"> <i class="fad fa-code-branch" style="color: <%=coderRole.hexColor%>;bottom: -5px; font-size: 26px;"></i></span>
+            <% } %>
             <% if (manager) { %>
             <span data-tooltip="<%=manager.name%>" data-tooltip-location="top"> <i class="fas fa-shield-alt has-text-info" style="color: <%=manager.hexColor%>;bottom: -5px; font-size: 26px;"></i></span>
             <% } %>
