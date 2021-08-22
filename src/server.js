@@ -207,7 +207,8 @@ module.exports = async (client) => {
         dynamic: true
       })).setThumbnail(a.avatarURL({
         dynamic: true
-      })).setColor("RED").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodez.xyz/user/${a.id}) The user tried to log into the site but could not log in because s/he was blocked from the site.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
+      })).setColor("RED").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodez.xyz/user/${a.id}) The user tried to log into the site but could not log in because s/he was blocked from the site.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator).addField("User Profile", `[**${a.username}**#${a.discriminator}](https://discord.com/users/${a.id}) \n
+      <@${a.id}>`))
     })
     req.session.destroy(() => {
       res.json({
@@ -237,7 +238,8 @@ module.exports = async (client) => {
         dynamic: true
       })).setThumbnail(a.avatarURL({
         dynamic: true
-      })).setColor("GREEN").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodez.xyz/user/${a.id}) User named **site** logged in.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator))
+      })).setColor("GREEN").setDescription(`[**${a.username}**#${a.discriminator}](https://vcodez.xyz/user/${a.id}) User named **site** logged in.`).addField("Username", a.username).addField("User ID", a.id).addField("User Discriminator", a.discriminator).addField("User Profile", `[**${a.username}**#${a.discriminator}](https://discord.com/users/${a.id}) \n
+      <@${a.id}>`))
 
     })
   }
